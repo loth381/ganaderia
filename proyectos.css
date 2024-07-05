@@ -1,0 +1,129 @@
+.container01 {
+    padding: 2rem 8rem;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .sidebar {  
+    border-radius: 16px; 
+    padding:0rem 0rem 8rem 0rem;   
+    width: 25%;
+    background-color: #34b433;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .sidebar ul li {
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #2a8a2b;
+  }
+  
+  .content {
+    width: 75%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .description {
+    text-align: center;
+  }
+  
+  .description h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #34b433;
+  }
+  
+  .description p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .image-container01 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 320px) and  (max-width: 560px)  {
+      .container01 {
+          padding: 0rem 0rem;
+          height: 748px;
+      }
+      .content{
+          width: 78%;
+          padding: 0.7rem ;
+      }
+      .description p {
+          font-size: 14px;
+          text-align: -webkit-left;
+          padding: 0.4rem;
+      }
+      .description h2{
+          font-size: 1rem;
+      }
+      .sidebar ul {
+          padding: 0rem;
+          font-size: 13px;
+      }
+      .sidebar{
+          padding:  0rem 0rem 3rem 0rem;
+          width: 40%;
+          border-radius: 0px;
+      }
+  }
+  
+  @media (max-width: 1024px) {
+    .container01 {
+      padding: 2rem;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .sidebar {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+  
+    .content {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media (min-width: 1024px) {
+      .container01 {
+          padding: 2rem 8rem;
+      }
+  }
+  
+  @media (width > 1600px) {
+      .container01{
+          padding: 2rem 12rem;
+      }
+      .sidebar ul{
+          font-weight: 600;
+          font-size: 17px;
+      }
+  }

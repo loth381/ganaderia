@@ -66,3 +66,20 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+// Nosotros
+
+let currentImageIndex = 0;
+    const images = document.querySelectorAll('.hero-image');
+    const totalImages = images.length;
+
+    function changeImage() {
+      images[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % totalImages;
+      images[currentImageIndex].classList.add('active');
+    }
+
+    setInterval(changeImage, 3000); // Cambia de imagen cada 3 segundos
+
+
+    
