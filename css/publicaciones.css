@@ -1,5 +1,5 @@
 .container01 {
-  padding: 2rem 8rem;
+  padding: 2rem 1rem;
   display: flex;
   width: 100%;
   height: 600px;
@@ -37,7 +37,7 @@
 
 .content {
   width: 75%;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +75,7 @@
 
 .content-container div {
   margin: 1rem;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .content-container iframe {
@@ -90,6 +90,9 @@
     flex-direction: column;
     height: auto;
   }
+  .content-container div {
+    max-width: 270px;
+  }
 
   .sidebar {
     width: 100%;
@@ -99,5 +102,20 @@
   .content {
     width: 100%;
     padding: 0;
+  }
+}
+@media (min-width: 1500px) {
+  .container01{
+    padding: 2rem 4rem;
+  }
+  .content-container div {
+
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width:1500px){
+  .content-container div {
+    max-width: 270px;
   }
 }

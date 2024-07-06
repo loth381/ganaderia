@@ -103,7 +103,7 @@ body {
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("assets/hero.jpg");
+    url("/assets/hero.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,12 +264,12 @@ nav {
 
 .about__card:nth-child(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("assets/pdffondo.jpg");
+    url("/assets/pdffondo.jpg");
 }
 
 .about__card:nth-child(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("assets/contactos.jpg");
+    url("/assets/contactos.jpg");
 }
 
 .about__card:nth-child(3) {
@@ -727,6 +727,9 @@ nav {
     width: 29%;
     height: 20%;
     margin:  0 0 7px 83px;
+  }
+  .logo{
+    width: 52px;
   }
 }
 
