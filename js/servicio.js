@@ -1,42 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const options = document.querySelectorAll('.option');
-    const description = document.getElementById('description');
-    const image = document.getElementById('image');
+  const options = document.querySelectorAll('.option');
+  const description = document.getElementById('description');
+  const slider = document.getElementById('slider');
+  let currentSlide = 0;
 
-    const content = {
-      asesoria: {
-        title: 'Asesoría y Capacitación',
-        text: 'GMyC, brinda asesoría y capacitación sobre aspectos de desarrollo y conservación como ganadería, agricultura, forestal, riegos, medio ambiente, sistemas de información geográfica y percepción remota, análisis estadístico, proyectos, de manera presencial y virtual.',
-        img: '/assets/about-1.jpg'
-      },
-      investigacion: {
-        title: 'Investigación',
-        text: 'GMyC, desarrolla investigaciones en las áreas productivas y ambientales, con el objetivo de resolver problemas puntuales relacionados al sector productivo y ambiental.',
-        img: '/assets/about-2.jpg'
-      },
-      proyectos: {
-        title: 'Proyectos y Planes',
-        text: 'GMyC, elabora y diseña proyectos y planes de desarrollo y conservación en el marco de las normas vigentes en el país.',
-        img: '/assets/about-3.jpg'
-      },
-      estudios: {
-        title: 'Estudios',
-        text: 'GMyC, desarrolla estudios técnicos a nivel semidetallado y detallado, de acuerdo a objetivo del cliente. Los estudios realizados son Monitoreo ambientales, Estudios de impacto ambiental, Valoracion ambiental, Tasacion de predios, Zonificacion ecológica económica, Ordenamiento territorial',
-        img: '/assets/pdffondo.jpg'
-      },
-      ejecucion: {
-        title: 'Ejecución',
-        text: 'GMyC, ejecuta proyectos en materia productiva y ambiental, como Biorestauracion de ecosistemas, Cierre ambiental, Produccion ganadera, Produccion agrícola.',
-        img: '/assets/about-2.jpg'
-      }
-    };
+  const content = {
+    asesoria: {
+      title: 'GANADERIA',
+      text: 'GMACONS presta servicios y ejuta entrasformaciones de materia prima como fibra y carne de animales domesticos.',
+      img: ['/assets/ganaderia01.jpeg', '/assets/ganaderia02.jpeg', '/assets/ganaderia03.jpeg', '/assets/ganadaria04.jpeg']
+    },
+    investigacion: {
+      title: 'MEDIO AMBIENTE',
+      text: 'GMACONS brinda asesoramiento y ejecución en temas ambientales y provee plantones de pastos nativos y forestales y a la vez ejecuta proyectos de construcciones de invernaderos y reservorios.',
+      img: ['/assets/ambiente04.jpeg', '/assets/ambiente02.jpeg', '/assets/ambiente03.jpeg', '/assets/ambiente01.jpeg']
+    },
+    proyectos: {
+      title: 'CONSTRUCCION',
+      text: 'GMACONS también presta servicios de constructivos en edificaciones.',
+      img: ['/assets/construcion01.jpeg', '/assets/construcion02.jpeg', '/assets/home03.jpeg','/assets/servicios02.jpeg']
+    }
+  };
 
-    options.forEach(option => {
-      option.addEventListener('click', () => {
-        const selectedContent = content[option.dataset.content];
-        description.innerHTML = `<h2>${selectedContent.title}</h2><p>${selectedContent.text}</p>`;
-        image.src = selectedContent.img;
-        image.alt = selectedContent.title;
-      });
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      const selectedContent = content[option.dataset.content];
+      description.innerHTML = `<h2>${selectedContent.title}</h2><p>${selectedContent.text}</p>`;
+      slider.innerHTML = selectedContent.img.map(img => `<img src="${img}" alt="${selectedContent.title}" class="slider-image">`).join('');
+      currentSlide = 0;
+      updateSlider();
     });
   });
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % 4;
+    updateSlider();
+  }, 3000);
+})

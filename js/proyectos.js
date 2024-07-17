@@ -1,37 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const options = document.querySelectorAll('.option');
-    const description = document.getElementById('description');
-    const image = document.getElementById('image');
+  const options = document.querySelectorAll('.option');
+  const description = document.getElementById('description');
+  const slider = document.getElementById('slider');
+  let currentSlide = 0;
 
-    const content = {
-      asesoria: {
-        title: 'Biorestauración del Gasoducto de Perú LNG. PERU LNG SRL',
-        text: 'Este proyecto se inició en el año 2011, y tiene como objetivo la recuperación de la vegetación nativa (pastizal, arbustiva, bofedal) de las áreas cruzadas por el gasoducto de PERU LNG. GMyC realiza actividades de capacitación, monitoreo, planificacion y supervisión del proceso de biorestauracion de estos ecosistemas hasta alcanzar un nivel de estadio apropiado de recuperación.',
-        img: '/assets/about-1.jpg'
-      },
-      investigacion: {
-        title: 'Cierre Ambiental de Minas, CIA MINERA ARES SAC',
-        text: 'Este proyecto se inició en el año 2014, y tiene como objetivo el cierre ambiental de las áreas de exploración minera de la compañía en diversos lugares del país. Para ello GMyC realiza estudios de suelos y vegetación, elabora planes de restauración y ejecuta el cierre ambiental.',
-        img: '/assets/about-2.jpg'
-      },
-      proyectos: {
-        title: 'Ecología de la Propagación de Eriotheca sp. SMITHSONIAN INSTITUTE',
-        text: 'Este proyecto se inició en el año 2011, y tuvo como objetivo el desarrollo de investigaciones del proceso de propagación de la especie Eriotheca sp, desde la cosecha de la semilla, la germinación y el desarrollo de las plántulas y plantones en condiciones de laboratorio y vivero. Estos mismos estudios sirvieron de base para investigaciones en campo en la localidad de San Miguel, Ayacucho.',
-        img: '/assets/about-3.jpg'
-      },
-      ejecucion: {
-        title: 'Caracterización de Praderas Nativas. ZOCAEDA',
-        text: 'Este proyecto se inició el año 2015, y tuvo como objetivo asesorar y capacitar a profesionales y productores integrantes de este estudio, en las bases para el manejo y mejoramiento de los pastizales altoandinos en las comunidades campesinas de la región Huancavelica.',
-        img: '/assets/about-2.jpg'
-      }
-    };
+  const content = {
+    asesoria: {
+      title: 'Proveedor de plantas nativas para bio restauración de Perú LNG',
+      text: 'Se ha implementado plantas nativas de las zonas alto andino como las especies de calamagrostis rigida, la festuca sp, Que son especies palatables para la alpaca o vino, llama, vacuno y vicuña.',
+      img: ['/assets/ganaderia01.jpeg', '/assets/ganaderia02.jpeg', '/assets/ganaderia03.jpeg', '/assets/ganadaria04.jpeg']
+    },
+    investigacion: {
+      title: 'Proveedor de plantas nativas para parcelas demostrativas de SERFOR',
+      text: 'Se ha implementado especies nativas de festuca sp, bromus, lanatus, poa sp. ',
+      img: ['/assets/ambiente04.jpeg', '/assets/ambiente02.jpeg', '/assets/ambiente03.jpeg', '/assets/ambiente01.jpeg']
+    },
+    proyectos: {
+      title: 'Construcción de reservorio para riego',
+      text: 'Se viene implementando la construcción de reservorio con geomembrana (hdp)',
+      img: ['/assets/construcion01.jpeg', '/assets/construcion02.jpeg', '/assets/home03.jpeg','/assets/servicios02.jpeg']
+    },
+    estudios:{
+      title: 'Construcción de viveros',
+      text: 'Se viene implementando la construcción de viveros para realizar trabajos de producción de material vegetativo, especies nativas para forestación y producción de hortalizas.  ',
+      img: ['/assets/construcion01.jpeg', '/assets/construcion02.jpeg', '/assets/home03.jpeg','/assets/servicios02.jpeg']
+    },
+  };
 
-    options.forEach(option => {
-      option.addEventListener('click', () => {
-        const selectedContent = content[option.dataset.content];
-        description.innerHTML = `<h2>${selectedContent.title}</h2><p>${selectedContent.text}</p>`;
-        image.src = selectedContent.img;
-        image.alt = selectedContent.title;
-      });
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      const selectedContent = content[option.dataset.content];
+      description.innerHTML = `<h2>${selectedContent.title}</h2><p>${selectedContent.text}</p>`;
+      slider.innerHTML = selectedContent.img.map(img => `<img src="${img}" alt="${selectedContent.title}" class="slider-image">`).join('');
+      currentSlide = 0;
+      updateSlider();
     });
   });
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % 4;
+    updateSlider();
+  }, 3000);
+})

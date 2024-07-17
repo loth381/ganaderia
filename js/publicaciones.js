@@ -8,9 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'ARTÍCULOS GMYC',
       text: 'Aquí puedes encontrar Articulos relacionados con nuestros proyectos y servicios.',
       downloads: [
-        { title:"Restauración de la Vegetación en Ambientes Andinos: Logros y Retos. En: Monitoreo de Biodiversidad, Lecciones de una Megaproyecto Trasandino", name: 'Documento 1', link: 'documentos/doc1.pdf', thumbnail: '/assets/about-1.jpg', description: 'Restauración de la Vegetación en Ambientes Andinos: Logros y Retos. En: Monitoreo de Biodiversidad.' },
-        { title: 'Extensive and intensive ecosystem restoration monitoring across complex central Andean landscapes', link: 'documentos/doc2.pdf', thumbnail: '/assets/about-1.jpg', description: 'The construction of a 408 km gas pipeline in southern Andean Peru caused disruption to the natural landscape and likely affected species, communities and ecosystems at different levels. The project aims to restore the landscape by restoring degraded lands, improving the quality of the soil, and restoring the ecosystems.' },
-        { title: 'Extensive and intensive ecosystem restoration monitoring across complex central Andean landscapes', link: 'documentos/doc3.pdf', thumbnail: '/assets/about-1.jpg', description: 'The construction of a 408 km gas pipeline in southern Andean Peru caused disruption to the natural landscape and likely affected species, communities and ecosystems at different levels.' }
+        { title:"Restauración de la Vegetación en Ambientes Andinos: Logros y Retos. En: Monitoreo de Biodiversidad, Lecciones de una Megaproyecto Trasandino",  link: 'documentos/doc1.pdf', thumbnail: '/assets/about-1.jpg' },
+        { title: 'Extensive and intensive ecosystem restoration monitoring across complex central Andean landscapes', link: 'documentos/doc2.pdf', thumbnail: '/assets/about-1.jpg'},
+        { title: 'Extensive and intensive ecosystem restoration monitoring across complex central Andean landscapes', link: 'documentos/doc3.pdf', thumbnail: '/assets/about-1.jpg'},
+        { title:"Restauración de la Vegetación en Ambientes Andinos: Logros y Retos. En: Monitoreo de Biodiversidad, Lecciones de una Megaproyecto Trasandino",  link: 'documentos/doc1.pdf', thumbnail: '/assets/about-1.jpg' },
+        { title: 'Extensive and intensive ecosystem restoration monitoring across complex central Andean landscapes', link: 'documentos/doc2.pdf', thumbnail: '/assets/about-1.jpg'},
+        { title: 'Extensive and intensive ecosystem restoration monitoring across complex central Andean landscapes', link: 'documentos/doc3.pdf', thumbnail: '/assets/about-1.jpg'}
       ]
     },
     videos: {
@@ -50,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
               <img src="${download.thumbnail}" alt="${download.name}">
             </a>
             <p style="color: #34b433; font-weight: bold; font-size: 12px;">${download.title}</p>
-            <p style="font-size: 12px;">${download.description}</p>
             
           </div>
         `).join('');

@@ -1,12 +1,10 @@
 .container01 {
-  padding: 2rem 1rem;
+  padding: 0rem 7rem;
   display: flex;
   width: 100%;
-  height: 600px;
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #fff;
 }
 
 .sidebar {
@@ -17,7 +15,7 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .sidebar ul {
@@ -37,7 +35,7 @@
 
 .content {
   width: 75%;
-  padding: 1rem;
+  padding: 0rem 0rem 0rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +43,7 @@
 }
 
 .description {
+  display: contents;
   text-align: center;
 }
 
@@ -55,9 +54,9 @@
 }
 
 .description p {
-  margin-bottom: 2rem;
+
   font-size: 1rem;
-  color: #333;
+  color: white;
 }
 
 .image-container01 img {
@@ -70,12 +69,12 @@
 .content-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .content-container div {
   margin: 1rem;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .content-container iframe {
@@ -83,10 +82,19 @@
   height: 180px;
   border-radius: 10px;
 }
+@media (min-width: 320px) and (max-width: 560px) {
+  .section__container01{
+    padding: 10rem 1rem;
+  }
+  .content{
+    padding: 1rem 0rem 0rem 0rem;
+  }
+}
+
 
 @media (max-width: 1024px) {
   .container01 {
-    padding: 2rem;
+    padding: 0rem;
     flex-direction: column;
     height: auto;
   }
@@ -101,21 +109,30 @@
 
   .content {
     width: 100%;
-    padding: 0;
+    
   }
 }
-@media (min-width: 1500px) {
-  .container01{
-    padding: 2rem 4rem;
-  }
+@media (min-width: 1400px) and (max-width:1500px){
+  
   .content-container div {
+    max-width: 243px;
+  }
+}
+@media (min-width: 1000px)  and (max-width: 1499px) {
+  .section__container{
+    padding: 0rem 0rem 3rem 0rem;
+   }
+}
 
+@media (min-width: 1600px)  and (max-width: 2000px) {
+  .section__container{
+    padding: 0.9rem 0rem 9rem 0rem;
+   }
+   .sidebar{
+    width: 19%;
+   }
+   .content-container div {
     max-width: 300px;
   }
-}
-
-@media (min-width: 1400px) and (max-width:1500px){
-  .content-container div {
-    max-width: 270px;
   }
-}
+
