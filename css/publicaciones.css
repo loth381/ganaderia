@@ -1,5 +1,5 @@
 .container01 {
-  padding: 0rem 7rem;
+  padding: 0rem 0rem 2rem 7rem ;
   display: flex;
   width: 100%;
   height: auto;
@@ -34,8 +34,8 @@
 }
 
 .content {
-  width: 75%;
-  padding: 0rem 0rem 0rem 2rem;
+  width: 100%;
+  padding: 0rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,13 +49,13 @@
 
 .description h2 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #34b433;
 }
 
 .description p {
 
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -68,7 +68,7 @@
 
 .content-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 
@@ -86,8 +86,14 @@
   .section__container01{
     padding: 10rem 1rem;
   }
+  .content-container{
+    flex-wrap: wrap;
+  }
   .content{
     padding: 1rem 0rem 0rem 0rem;
+  }
+  .description h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -112,10 +118,13 @@
     
   }
 }
-@media (min-width: 1400px) and (max-width:1500px){
+@media (min-width: 1400px) and (max-width:1510px){
   
   .content-container div {
-    max-width: 243px;
+    max-width: 262px;
+  }
+  .section__container01{
+    padding: 10rem 0rem 9rem 0rem;
   }
 }
 @media (min-width: 1000px)  and (max-width: 1499px) {
@@ -132,7 +141,7 @@
     width: 19%;
    }
    .content-container div {
-    max-width: 300px;
+    max-width: 340px;
   }
   }
 

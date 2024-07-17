@@ -18,7 +18,7 @@
 .section__container01{
   max-width: 2000px;
   margin: auto;
-  padding: 6rem 1rem;
+  padding: 5rem 0rem 15rem 0rem;
 }
 .section__container {
   max-width: var(--max-width);
@@ -113,7 +113,7 @@ body {
 .header {
   
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-  url("/assets/fondo.jpeg");
+  url("/assets/fondo.webp");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -520,6 +520,7 @@ nav {
 }
 
 .footer__container {
+  padding: 1rem;
   display: grid;
   gap: 4rem 2rem;
   align-items: center;
@@ -820,12 +821,12 @@ nav {
 
 @media (min-width: 1000px)  and (max-width: 1450px) {
   .section__container{
-    padding: 6.9rem 1rem 8rem 1rem;
+    padding: 6.9rem 1rem 5rem 1rem;
    }
 }
 
 @media (min-width: 1500px)  and (max-width: 1800px) {
   .section__container{
-    padding: 0.9rem 0rem 11rem 0rem;
+    padding: 0.9rem 0rem 14rem 0rem;
    }
 }
