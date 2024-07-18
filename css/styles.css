@@ -164,7 +164,7 @@ nav {
 
 .nav__links {
   position: absolute;
-  top: 68px;
+  top: 86px;
   left: 0;
   width: 100%;
   padding: 5rem 0rem 1.5rem 0rem;
@@ -609,7 +609,7 @@ nav {
 @media (width > 768px) {
   nav {
     position: static;
-    padding: 1rem 0rem;
+    padding: 2rem 2rem;
     max-width: var(--max-width);
     margin-inline: auto;
     display: flex;
@@ -639,7 +639,7 @@ nav {
   .nav__links {
     gap: 4rem;
     position: static;
-    padding: 0;
+    padding: 0rem 2rem 2rem 0rem;
     flex-direction: row;
     background-color: transparent;
     transform: none;
@@ -750,7 +750,7 @@ nav {
     height: 20%;
     margin:  0 0 7px 83px;
   }
-  .logo{
+  .nav__logo img{
     width: 100px;
   }
   .logofooter{

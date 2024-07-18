@@ -1,5 +1,5 @@
 .container01 {
-  padding: 0rem 0rem 2rem 7rem ;
+  padding: 0rem 0rem 2rem 3rem ;
   display: flex;
   width: 100%;
   height: auto;
@@ -121,17 +121,13 @@
 @media (min-width: 1400px) and (max-width:1510px){
   
   .content-container div {
-    max-width: 262px;
+    max-width: 337px;
   }
   .section__container01{
-    padding: 10rem 0rem 9rem 0rem;
+    padding: 1rem 0rem 14rem 0rem;
   }
 }
-@media (min-width: 1000px)  and (max-width: 1499px) {
-  .section__container{
-    padding: 0rem 0rem 3rem 0rem;
-   }
-}
+
 
 @media (min-width: 1600px)  and (max-width: 2000px) {
   .section__container{
@@ -141,7 +137,7 @@
     width: 19%;
    }
    .content-container div {
-    max-width: 340px;
+    max-width: 400px;
   }
   }
 
