@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     proyectos: {
       title: 'Construcción de reservorio para riego',
-      text: 'viene implementando la construcción de reservorio con geomembrana (HDP), para riegos de pastos nativos y pasto cultivo ',
+      text: 'Se viene implementando la construcción de reservorio con geomembrana (HDP), para riegos de pastos nativos y pasto cultivo ',
       img: ['/assets/project08.webp', '/assets/project09.webp', '/assets/project10.webp','/assets/project14.webp']
     },
     estudios:{
