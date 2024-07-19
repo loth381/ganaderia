@@ -7,18 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const content = {
     asesoria: {
       title: 'Proveedor de plantas nativas para bio restauración de Perú LNG',
-      text: 'Se ha implementado plantas nativas de las zonas alto andino como las especies de calamagrostis rigida, la festuca sp, Que son especies palatables para la alpaca o vino, llama, vacuno y vicuña.',
+      text: 'Se ha proveído material vegetativo de especie nativas de la zona alto andino como las especies calamagrostis rígida, la festuca sp. Que son especies palatables para la ganadería alto andina.',
       img: ['/assets/project01.webp', '/assets/project02.webp', '/assets/project03.webp', '/assets/project04.webp']
     },
     investigacion: {
       title: 'Proveedor de plantas nativas para parcelas demostrativas de SERFOR',
-      text: 'Se ha implementado especies nativas de festuca sp, bromus, lanatus, poa sp. ',
+      text: 'Se ha proveído de material vegetativo de especies nativos de la zona alto andina ,para parcelas  demostrativas para diferentes regiones del Perú. ',
       img: ['/assets/project05.webp', '/assets/project07.webp', "/assets/servicios01.webp" , '/assets/redes2.webp']
     },
     proyectos: {
       title: 'Construcción de reservorio para riego',
-      text: 'Se viene implementando la construcción de reservorio con geomembrana (hdp)',
-      img: ['/assets/project08.webp', '/assets/project09.webp', '/assets/project10.webp','/assets/project09.webp']
+      text: 'viene implementando la construcción de reservorio con geomembrana (HDP), para riegos de pastos nativos y pasto cultivo ',
+      img: ['/assets/project08.webp', '/assets/project09.webp', '/assets/project10.webp','/assets/project14.webp']
     },
     estudios:{
       title: 'Construcción de viveros',
