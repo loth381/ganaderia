@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const content = {
     asesoria: {
       title: 'Proveedor de plantas nativas para bio restauración de Perú LNG',
-      text: 'Se ha proveído material vegetativo de especie nativas de la zona alto andino como las especies calamagrostis rígida, la festuca sp. Que son especies palatables para la ganadería alto andina.',
+      text: 'Se ha proveído material vegetativo para la Biorestauracion en el derecho de día con especie nativas de la zona alto andina como las especies calamagrostis rígida, la festuca sp. Que son especies palatables para la ganadería alto andina.',
       img: ['/assets/project01.webp', '/assets/project02.webp', '/assets/project03.webp', '/assets/project04.webp']
     },
     investigacion: {
-      title: 'Proveedor de plantas nativas para parcelas demostrativas de SERFOR',
-      text: 'Se ha proveído de material vegetativo de especies nativos de la zona alto andina ,para parcelas  demostrativas para diferentes regiones del Perú. ',
+      title: 'Proveedor de plantas nativas para parcelas demostrativas ',
+      text: 'Se ha proveído de material vegetativo de especies nativos de la zona alto andina, para parcelas demostrativas para diferentes regiones del Perú. ',
       img: ['/assets/project05.webp', '/assets/project07.webp', "/assets/servicios01.webp" , '/assets/redes2.webp']
     },
     proyectos: {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     estudios:{
       title: 'Construcción de viveros',
-      text: 'Se viene implementando la construcción de viveros para realizar trabajos de producción de material vegetativo, especies nativas para forestación y producción de hortalizas.  ',
+      text: 'se viene implementando la construcción de viveros para realizar trabajos de producción de material vegetativo con especies nativas para la Biorestauracion, forestación, producción de hortalizas, etc',
       img: ['/assets/project11.webp', '/assets/project12.webp', '/assets/project13.webp','/assets/project12.webp  ']
     },
   };

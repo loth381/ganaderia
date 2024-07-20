@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     proyectos: {
       title: 'CONSTRUCCION',
-      text: 'GMACONS también presta servicios de constructivos en edificaciones.',
+      text: 'GMACONS también presta servicios  constructivos en edificaciones Con las últimas tendencias.',
       img: ['/assets/construcion01.webp', '/assets/construcion02.webp', '/assets/home03.webp','/assets/servicios02.webp']
     }
   };
