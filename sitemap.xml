@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gmaconslljeirl.vercel.app/</loc>
+    <loc>https://gmacons.vercel.app/</loc>
     <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gmaconslljeirl.vercel.app/html/nosotros.html</loc>
+    <loc>https://gmacons.vercel.app/html/nosotros.html</loc>
     <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gmaconslljeirl.vercel.app/html/servicios.html</loc>
+    <loc>https://gmacons.vercel.app/html/servicios.html</loc>
     <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gmaconslljeirl.vercel.app/html/proyectos.html</loc>
+    <loc>https://gmacons.vercel.app/html/proyectos.html</loc>
     <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gmaconslljeirl.vercel.app/html/publicaciones.html</loc>
+    <loc>https://gmacons.vercel.app/html/publicaciones.html</loc>
     <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://gmaconslljeirl.vercel.app/html/contacto.html</loc>
+    <loc>https://gmacons.vercel.app/html/contacto.html</loc>
     <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
